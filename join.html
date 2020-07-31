@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style3.css" rel="stylesheet" type="text/css"><!--css 파일 연결-->
+</head>
+<body>
+    <header><!-- 헤더 -->
+        
+        <nav>
+
+            <ul>
+               
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="join.html">JOIN</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- 컨텐츠 -->
+    <article>
+        <h1 class="join"><b>회원가입</b></h1>
+        <table border="1" class="push_left"> <!--표-->
+            <tr> <!--줄-->
+                <td>아이디</td>
+                <td> <!-- 폼 태그 -->
+                    <form>
+                    <input type="text" placeholder="아이디를 입력하세요" required></td>
+            </tr>
+            <tr> <!--줄-->
+                <td>비밀번호</td>
+                <td> <input type="password" placeholder="비밀번호를 입력하세요"></td>
+            </tr>
+            <tr> <!--줄-->
+                <td>이름</td>
+                <td><input type="age" placeholder="이름을 입력하세요"></td>
+            </tr>
+            <tr> <!--줄-->
+                <td>성별</td>
+                <td><input type="radio" name="fm"> 남자
+                    <input type="radio" name="fm"> 여자</td>
+            </tr>
+            <tr> <!--줄-->
+                <td>생년월일</td>
+                <td><input type="date" value="2020-07-31"></td>
+            </tr>
+            <tr> <!--줄-->
+                <td>취미</td>
+                <td><input type="checkbox">운동
+                <input type="checkbox">독서
+                <input type="checkbox">영화감상
+            </tr>
+            <tr> <!--줄-->
+                <td>자기소개</td>
+                <td><textarea cols="30" rows="5"></textarea></td>
+            </tr>
+        </table>
+        <input type="submit" value="SUBMIT" class="push_left">
+        <input type="reset" value="RESET">
+    </form>
+    </article>
+
+    <!-- 푸터 -->
+    <footer>
+        <address> GSM </address>
+    </footer>
+
+</body>
+</html>

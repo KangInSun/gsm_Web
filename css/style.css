@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: '맑은 고딕';
+    letter-spacing: -1px;
+    line-height: 160%;
+}
+#container{
+    width:1000px;
+    position: relative;
+    margin: 0 auto;
+}
+ul{
+    width:100%;
+    background-color:grey;
+    display:flex;
+}
+li{
+    flex:1;
+    list-style:none;
+    display:inline-block;
+    padding:5px;
+    background:white;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display:block;
+    background:lightsteelblue;
+}
+
+/******* 헤더 *******/
+header{
+    width:1000px;
+    height: 100px;
+    background: pink;
+    position: relative;
+}
+#logo{
+    width:200px;
+    height: 50px;
+    background:lightgoldenrodyellow;
+    position: absolute;
+    top:20px;
+    left: 20px;
+}
+nav{
+    width:60%;
+    height: 50px;
+    background: linen;
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+nav li{
+    flex:1;
+    list-style:none;
+    padding:5px;
+    display:inline-block;
+    background:white;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+}
+nav li a{
+    transition: 0.5s;
+}
+nav li:hover{
+    background: mediumpurple;
+}
+nav li:hover a{
+    color:white;
+}
+/****** 술라이드 ******/
+#slide{
+    width:100%;
+    height: 300px;
+    background:lightcyan;
+    position: relative;
+    overflow: hidden;
+}
+#slide .slide_move {
+    width:400%;
+    display: flex;
+    position: relative;
+    animation: slide 10s infinite;
+}
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    33%{
+        left:-1000px;
+    }
+    66%{
+        left:-2000px;
+    }
+    100%{
+        left:-3000px;
+    }
+}
+#slide .slide_move img {
+    flex:1;
+    width:1000px;
+}
+/*
+#slide .circle{
+    width:200px;
+    height: 200px;
+    background:palevioletred;
+    border-radius: 50%;
+    border:1px solid black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation: circle 1s infinite alternate;
+}
+@keyframes circle{
+    0%{
+        
+    }
+    50%{
+        width:100px;
+        height:100px;
+        background: papayawhip;
+    }
+    100%{
+        border: 0;
+        background: grey;
+    }
+}*/
+/******* 컨텐츠 *******/
+article{
+    width:1000px;
+    display:flex;
+    background: lightgrey;
+    
+}
+section{
+    flex:1;
+    background:lightgoldenrodyellow;
+    border:1px solid white;
+    width:200%;
+    display: inline-block;
+    height:250px;
+}
+section:nth-child(1){
+    flex:1.5;
+}
+footer{
+    width: 1000px;
+    height:100px;
+    background:pink;
+}
